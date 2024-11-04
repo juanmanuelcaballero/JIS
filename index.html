@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="titulo" class="colortitulo">Página web ProA</h1>
+    <button class="myButton" id="btn_alerta">Cambiar</button>
+    <button class="myButton" id="btn_vuelve">Original</button>
+
+    <script type="text/javascript">
+        let elemento = document.getElementById("titulo");
+        document.getElementById('btn_alerta').onclick = function () {
+            elemento.innerHTML = "Texto cambiado";
+            elemento.setAttribute('class', 'colortitulo2');
+        }
+        document.getElementById('btn_vuelve').onclick = function () {
+            elemento.innerHTML = "Texto original";
+            elemento.setAttribute('class', 'colortitulo');
+        }
+    </script>
+    <a href="./pagina2.html">Siguiente página</a>
+</body>
+
+</html>
